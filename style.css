@@ -542,6 +542,14 @@ button:hover {
   white-space: nowrap;
 }
 
+.button-viewmenu a {
+  text-decoration: none;
+  color: var(--deepblue);
+  font-family: font-3;
+  text-align: center;
+  align-content: center;
+}
+
 .button-viewmenu:before {
   animation: opacityFallbackOut 0.5s step-end forwards;
   backface-visibility: hidden;
