@@ -1,0 +1,145 @@
+.grid_010101_menu {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.child-01 {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+
+.grid_010101_favorites {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+  padding-bottom: 10%;
+}
+
+.grid_010101_comedy {
+  padding-left: 1%;
+  padding-right: 1%;
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  padding-bottom: 10%;
+}
+
+.child-1-comedy {
+  grid-row: 1;
+  grid-column: 1/4;
+}
+
+.child-2-comedy {
+  grid-row: 2;
+  grid-column: 2/3;
+}
+
+.grid_010101_about {
+  padding-left: 1%;
+  padding-right: 1%;
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  padding-bottom: 10%;
+}
+
+.grid_010101_footer {
+  padding-left: 1%;
+  padding-right: 1%;
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.child-1 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  grid-row: 1;
+  grid-column: 1/2;
+}
+
+.child-2 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  grid-row: 1;
+  grid-column: 2/3;
+}
+
+.child-3 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  grid-row: 1;
+  grid-column: 3/4;
+}
+
+.menu_button {
+  padding-left: 1%;
+  padding-right: 1%;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.child-001 {
+  grid-row: 1;
+  grid-column: 2/3;
+}
+
+.child-002 {
+  grid-row: 2;
+  grid-column: 2/3;
+}
+
+.child-003 {
+  grid-row: 3;
+  grid-column: 2/3;
+}
+
+#container_gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  object-fit: contain;
+  max-width: 100%;
+  gap: 10px;
+  padding: 1%;
+  padding-top: 10%;
+}
+
+#child-gl-1 {
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+
+#child-gl-2 {
+  grid-column: 3/5;
+  grid-row: 1/2;
+}
+
+#child-gl-7 {
+  grid-column: 1/3;
+  grid-row: 3/4;
+}
+#child-gl-8 {
+  grid-column: 3/5;
+  grid-row: 3/4;
+}
+
+#instafeed {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 10%;
+  padding-left: 6%;
+}

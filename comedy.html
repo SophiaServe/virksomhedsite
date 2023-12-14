@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="shortcut icon" href="content/favicon_io/favicon.ico" type="image/x-icon">
+    <title>Citizen - Comedy </title>
+    <script src="https://kit.fontawesome.com/45da6a5a17.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="float-nav">
+        <a href="#" class="menu-btn">
+            <ul>
+                <li class="line"></li>
+                <li class="line"></li>
+                <li class="line"></li>
+            </ul>
+            <div class="menu-txt">menu</div>
+        </a>
+    </div>
+
+    <div class="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="comedy.html">Comedy & Events</a></li>
+            <li><a href="about.html">About Us</a></li>
+
+        </ul>
+    </div>
+    <main>
+
+
+
+
+
+        <div id="info_comedy">
+            <h1>Comedy & Events</h1>
+            <p>
+                Table & Event booking
+
+                Cocktail Bar in the heart of Copenhagen. Exotic, beautiful & refreshing cocktails. Special beers only
+                sold by us in Denmark. Funky tunes. Inbox for reservations
+
+            </p>
+        </div>
+        <div id="form_comedy">
+            <form action="reservation.php" method="post">
+                <div class="elem-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20}
+                        required>
+                </div>
+                <div class="elem-group">
+                    <label for="email">Your E-mail</label>
+                    <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+                </div>
+                <div class="elem-group">
+                    <label for="phone">Your Phone</label>
+                    <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872"
+                        pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+                </div>
+                <hr>
+                <div class="elem-group inlined">
+                    <label for="adult">Adults</label>
+                    <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+                </div>
+
+                <div class="elem-group inlined">
+                    <label for="checkin-date">Date</label>
+                    <input type="date" id="checkin-date" name="checkin" required>
+                </div>
+
+                <div class="elem-group">
+                    <label for="room-selection">Select Table</label>
+                    <select id="room-selection" name="room_preference" required>
+                        <option value="">Choose a table from the List</option>
+                        <option value="connecting">Lounge</option>
+                        <option value="adjoining">Bar</option>
+                        <option value="adjacent">Main Room</option>
+                    </select>
+                </div>
+                <hr>
+                <div class="elem-group">
+                    <label for="message">Anything Else?</label>
+                    <textarea id="message" name="visitor_message"
+                        placeholder="Tell us anything else that might be important." required></textarea>
+                </div>
+                <button type="submit">Book</button>
+
+            </form>
+        </div>
+        <div>
+            <img src="content/pictures/comedy.webp" alt="comedy">
+
+        </div>
+
+
+    </main>
+    <footer>
+        <section class="footer" id="footer">
+            <div class="grid_010101_footer">
+                <div class="child-1">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.550393775666!2d12.573723976890369!3d55.67941817305717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4652536dac3d8fd1%3A0xdb859d25dd4eafab!2sCitizen!5e0!3m2!1sda!2sdk!4v1702367331566!5m2!1sda!2sdk"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="child-2" id="logo_footer"><img src="content/pictures/logo.webp" alt="logo_footer"></div>
+                <div class="child-3">
+                    <ul>
+                        <li>
+                            <i class="fa-brands fa-facebook"></i>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-square-instagram"></i>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        </section>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+
+</html>
