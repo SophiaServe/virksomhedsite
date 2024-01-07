@@ -21,20 +21,17 @@ html {
 
 @font-face {
   font-family: "font-1";
-  src: url("fonts/cantataone-regular-webfont.woff2") format("woff2"),
-    url("fonts/cantataone-regular-webfont.woff") format("woff");
+  src: url("fonts/cantataone-regular-webfont.woff2") format("woff2"), url("fonts/cantataone-regular-webfont.woff") format("woff");
 }
 
 @font-face {
   font-family: "font-2";
-  src: url("fonts/dmserifdisplay-regular-webfont.woff2") format("woff2"),
-    url("fonts/dmserifdisplay-regular-webfont.woff") format("woff");
+  src: url("fonts/dmserifdisplay-regular-webfont.woff2") format("woff2"), url("fonts/dmserifdisplay-regular-webfont.woff") format("woff");
 }
 
 @font-face {
   font-family: "font-3";
-  src: url("fonts/notable-regular-webfont.woff2") format("woff2"),
-    url("fonts/notable-regular-webfont.woff") format("woff");
+  src: url("fonts/notable-regular-webfont.woff2") format("woff2"), url("fonts/notable-regular-webfont.woff") format("woff");
 }
 
 body {
@@ -532,9 +529,7 @@ button:hover {
   text-decoration: none;
   text-rendering: geometricprecision;
   text-transform: uppercase;
-  transition: opacity 300ms cubic-bezier(0.694, 0, 0.335, 1),
-    background-color 100ms cubic-bezier(0.694, 0, 0.335, 1),
-    color 100ms cubic-bezier(0.694, 0, 0.335, 1);
+  transition: opacity 300ms cubic-bezier(0.694, 0, 0.335, 1), background-color 100ms cubic-bezier(0.694, 0, 0.335, 1), color 100ms cubic-bezier(0.694, 0, 0.335, 1);
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -561,8 +556,7 @@ button:hover {
   position: absolute;
   top: 0;
   transform: translateZ(0);
-  transition: clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1),
-    -webkit-clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
   width: 100%;
 }
 
